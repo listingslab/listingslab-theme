@@ -1,9 +1,9 @@
 ![alt text](http://listingslab.com/wp-content/uploads/2017/03/cropped-android-chrome-384x384.png "Listingslab Beaker Logo")
-# Listingslab Plugin
+# Listingslab Theme
 
 ## listingslab-plugin version 5.3
 
-Introduces functionality specific to the listingslab namespace.
+Introduces frontend functionality specific to the listingslab namespace.
 
 Contributors: Chris Dorward
 Tags: listingslab
