@@ -18,6 +18,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -42,11 +43,13 @@
 
 	<?php
 	// If a regular post or page, and not the front page, show the featured image.
+	/* Let's not do this
 	if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) ) :
 		echo '<div class="single-featured-image-header">';
 		the_post_thumbnail( 'twentyseventeen-featured-image' );
 		echo '</div><!-- .single-featured-image-header -->';
 	endif;
+	*/
 	?>
 
 	<div class="site-content-contain">
