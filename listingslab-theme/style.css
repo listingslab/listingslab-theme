@@ -4,7 +4,7 @@ Theme URI: http://listingslab.com/wordpress/listingslab-theme/?ref=wordpress-the
 Author: extended from twentyseventeen by listingslab
 Author URI: http://listingslab.com/home/blog/?ref=wordpress-theme
 Description: Want React? Want SEO? Want them both together without universal JavaScript?
-Version: 5.7
+Version: 5.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: listingslab
@@ -110,7 +110,6 @@ a:hover {
 }
 
 abbr[title] {
-	border-bottom: 1px #767676 dotted;
 	text-decoration: none;
 }
 
@@ -121,7 +120,7 @@ strong {
 
 b,
 strong {
-	font-weight: 700;
+	font-weight: bold;
 }
 
 code,
@@ -1131,7 +1130,8 @@ td:last-child {
 --------------------------------------------------------------*/
 
 a {
-	color: #23b0e6;
+	color: #000;
+	font-weight: bold;
 	text-decoration: none;
 }
 
