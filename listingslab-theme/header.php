@@ -12,7 +12,9 @@
  * @version 1.0
  */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -21,6 +23,9 @@
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <?php wp_head(); ?>
+
+<?php include 'css.php'; ?>
+
 </head>
 
 <body <?php body_class(); ?>>
