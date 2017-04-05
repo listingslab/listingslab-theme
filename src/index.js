@@ -1,12 +1,12 @@
 /*
-  listingslab-react frontend for WordPress
-  version 5.2
+  Entry point for listingslab-theme react frontend for WordPress
 */
 
-const vs = 5.2;
-const welcomeMessage = 'We are using react and this is the front end, build by webpack and ready for production';
+const vs = '5.9.0';
+const welcomeMessage = `Hello. We are using react and this is the front end,
+build by webpack and ready for production`;
 console.log (welcomeMessage);
-console.log (' Version ' + vs);
+console.log (`Version ${vs}`);
 
 
 // This will only work when ES6 is enabled

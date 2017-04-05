@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "webpack"
+    "start": "webpack-dev-server --open --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,9 @@
     }
   ],
   "license": "GPLv3",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   }
 }
