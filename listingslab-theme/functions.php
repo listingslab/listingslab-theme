@@ -49,7 +49,7 @@ function twentyseventeen_setup() {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
-	// add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'twentyseventeen-featured-image', 2000, 1200, true );
 
@@ -564,5 +564,3 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
-
-remove_action('wp_head', 'wp_generator');
