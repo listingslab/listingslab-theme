@@ -1,16 +1,17 @@
 /*
-Theme Name: Listingslab Theme
-Theme URI: http://listingslab.com/wordpress/listingslab-theme/?ref=wordpress-theme
-Author: extended from twentyseventeen by listingslab
-Author URI: http://listingslab.com/home/blog/?ref=wordpress-theme
-Description: Want React? Want SEO? Want them both together without universal JavaScript?
-Version: 5.9
+Theme Name: Twenty Seventeen
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: listingslab
-Tags: listingslab, javascript, react, webpack, SPA, react
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
 This theme, like WordPress, is licensed under the GPL.
-Share what you've learned with others.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 /*--------------------------------------------------------------
@@ -51,8 +52,7 @@ Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
 
 html {
-	font-family: 'PT Sans', sans-serif;
-	color: black;
+	font-family: sans-serif;
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -100,7 +100,7 @@ pre {
 }
 
 a {
-
+	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 }
 
@@ -110,6 +110,7 @@ a:hover {
 }
 
 abbr[title] {
+	border-bottom: 1px #767676 dotted;
 	text-decoration: none;
 }
 
@@ -120,7 +121,7 @@ strong {
 
 b,
 strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 code,
@@ -135,7 +136,8 @@ dfn {
 }
 
 mark {
-
+	background-color: #eee;
+	color: #222;
 }
 
 small {
@@ -181,7 +183,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: 'PT Sans', sans-serif;
+	font-family: sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -310,11 +312,13 @@ template {
 }
 
 .screen-reader-text:focus {
+	background-color: #f1f1f1;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
+	color: #21759b;
 	display: block;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -412,7 +416,8 @@ button,
 input,
 select,
 textarea {
-	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
@@ -447,25 +452,28 @@ h1 {
 }
 
 h2 {
+	color: #666;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 300;
 }
 
 h3 {
+	color: #333;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-weight: 300;
 }
 
 h4 {
-
+	color: #333;
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 800;
 }
 
 h5 {
+	color: #767676;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	font-weight: 800;
@@ -474,6 +482,7 @@ h5 {
 }
 
 h6 {
+	color: #333;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 800;
@@ -492,6 +501,7 @@ i {
 }
 
 blockquote {
+	color: #666;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-style: italic;
@@ -687,7 +697,7 @@ html[lang="uk"] button,
 html[lang="uk"] input,
 html[lang="uk"] select,
 html[lang="uk"] textarea {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
 html[lang="bg-BG"] h1,
@@ -729,7 +739,7 @@ html[lang="mr-IN"] button,
 html[lang="mr-IN"] input,
 html[lang="mr-IN"] select,
 html[lang="mr-IN"] textarea {
-	font-family: 'PT Sans', sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 html[lang="bn-BD"] h1,
@@ -760,7 +770,7 @@ html[lang="el"] button,
 html[lang="el"] input,
 html[lang="el"] select,
 html[lang="el"] textarea {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html[lang="el"] h1,
@@ -780,7 +790,7 @@ html[lang="gu-IN"] button,
 html[lang="gu-IN"] input,
 html[lang="gu-IN"] select,
 html[lang="gu-IN"] textarea {
-	font-family: 'PT Sans', sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 html[lang="gu-IN"] h1,
@@ -898,6 +908,7 @@ html[lang="th"] * {
 --------------------------------------------------------------*/
 
 label {
+	color: #333;
 	display: block;
 	font-weight: 800;
 	margin-bottom: 0.5em;
@@ -923,6 +934,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+	color: #666;
 	background: #fff;
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 	border: 1px solid #bbb;
@@ -949,6 +961,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
+	color: #222;
 	border-color: #333;
 }
 
@@ -973,11 +986,13 @@ input[type="checkbox"] + label {
 button,
 input[type="button"],
 input[type="submit"] {
+	background-color: #222;
 	border: 0;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
@@ -1001,6 +1016,8 @@ input[type="reset"],
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
+	background-color: #ddd;
+	color: #222;
 }
 
 button:hover,
@@ -1027,21 +1044,25 @@ input[type="submit"].secondary:focus {
 
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
-	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 :-moz-placeholder {
-	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 ::-moz-placeholder {
-	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
-	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1049,7 +1070,7 @@ input[type="submit"].secondary:focus {
 --------------------------------------------------------------*/
 
 hr {
-	background-color: #ccc;
+	background-color: #bbb;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -1130,17 +1151,18 @@ td:last-child {
 --------------------------------------------------------------*/
 
 a {
-	color: #000;
-	font-weight: bold;
+	color: #222;
 	text-decoration: none;
 }
 
 a:focus {
-	font-weight: bold;
+	outline: thin dotted;
 }
 
 a:hover,
 a:active {
+	color: #000;
+	outline: 0;
 }
 
 /* Hover effects */
@@ -1184,6 +1206,10 @@ a .nav-title,
 	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
 	text-decoration: none;
+	-webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+	transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
 
 .entry-content a:focus,
@@ -1234,6 +1260,9 @@ a:hover .nav-title,
 .widget .widget-title a:hover,
 .widget ul li a:focus,
 .widget ul li a:hover {
+	color: #000;
+	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
 }
 
 /* Fixes linked images */
@@ -1245,6 +1274,7 @@ a:hover .nav-title,
 
 .post-navigation a:focus .icon,
 .post-navigation a:hover .icon {
+	color: #222;
 }
 
 /*--------------------------------------------------------------
@@ -1285,12 +1315,15 @@ a:hover .nav-title,
 }
 
 .navigation-top a {
-
+	color: #222;
+	font-weight: 600;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
 }
 
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-
+	color: #767676;
 }
 
 .main-navigation {
@@ -1299,7 +1332,7 @@ a:hover .nav-title,
 }
 
 .main-navigation ul {
-
+	background: #fff;
 	list-style: none;
 	margin: 0;
 	padding: 0 1.5em;
@@ -1318,7 +1351,7 @@ a:hover .nav-title,
 }
 
 .main-navigation > div > ul {
-
+	border-top: 1px solid #eee;
 	padding: 0.75em 1.695em;
 }
 
@@ -1358,16 +1391,17 @@ a:hover .nav-title,
 }
 
 .main-navigation a:hover {
-
+	color: #767676;
 }
 
 /* Menu toggle */
 
 .menu-toggle {
-
+	background-color: transparent;
 	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	color: #222;
 	display: none;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1390,6 +1424,7 @@ a:hover .nav-title,
 
 .menu-toggle:hover,
 .menu-toggle:focus {
+	background-color: transparent;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
@@ -1415,9 +1450,11 @@ a:hover .nav-title,
 /* Dropdown Toggle */
 
 .dropdown-toggle {
+	background-color: transparent;
 	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	color: #222;
 	display: block;
 	font-size: 16px;
 	right: -0.5em;
@@ -1502,6 +1539,7 @@ body {
 }
 
 .site-header {
+	background-color: #fafafa;
 	position: relative;
 }
 
@@ -1540,6 +1578,7 @@ body {
 
 .site-title,
 .site-title a {
+	color: #222;
 	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
 }
 
@@ -1547,9 +1586,11 @@ body.has-header-image .site-title,
 body.has-header-video .site-title,
 body.has-header-image .site-title a,
 body.has-header-video .site-title a {
+	color: #fff;
 }
 
 .site-description {
+	color: #666;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	margin-bottom: 0;
@@ -1557,6 +1598,7 @@ body.has-header-video .site-title a {
 
 body.has-header-image .site-description,
 body.has-header-video .site-description {
+	color: #fff;
 	opacity: 0.8;
 }
 
@@ -1615,6 +1657,10 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 .custom-header-media:before {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+75 */
+	background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#4d000000", GradientType=0); /* IE6-9 */
 	bottom: 0;
 	content: "";
 	display: block;
@@ -1645,18 +1691,25 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 
 .wp-custom-header .wp-custom-header-video-button { /* Specificity prevents .color-dark button overrides */
-
+	background-color: rgba(34, 34, 34, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 	height: 45px;
 	overflow: hidden;
 	padding: 0;
 	position: fixed;
 	right: 30px;
 	top: 30px;
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
 	width: 45px;
 }
 
 .wp-custom-header .wp-custom-header-video-button:hover,
 .wp-custom-header .wp-custom-header-video-button:focus { /* Specificity prevents .color-dark button overrides */
+	border-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(34, 34, 34, 0.8);
+	color: #fff;
 }
 
 .admin-bar .wp-custom-header-video-button {
@@ -1730,6 +1783,11 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .panel-image:before {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+100 */ /* FF3.6-15 */
+	background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3)));
+	background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#4d000000", GradientType=0); /* IE6-9 */
 	bottom: 0;
 	content: "";
 	left: 0;
@@ -1767,6 +1825,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .twentyseventeen-front-page .panel-content .recent-posts article {
 	border: 0;
+	color: #333;
 	margin-bottom: 3em;
 }
 
@@ -1783,6 +1842,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .twentyseventeen-panel .recent-posts .entry-header .edit-link {
+	color: #222;
 	display: inline-block;
 	font-size: 11px;
 	font-size: 0.6875rem;
@@ -1794,6 +1854,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 --------------------------------------------------------------*/
 
 .site-content-contain {
+	background-color: #fff;
 	position: relative;
 }
 
@@ -1827,6 +1888,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
+	color: #222;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 800;
@@ -1839,6 +1901,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .entry-title a {
+	color: #333;
 	text-decoration: none;
 	margin-left: -2px;
 }
@@ -1848,6 +1911,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .entry-meta {
+	color: #767676;
 	font-size: 11px;
 	font-size: 0.6875rem;
 	font-weight: 800;
@@ -1857,6 +1921,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .entry-meta a {
+	color: #767676;
 }
 
 .byline,
@@ -1895,6 +1960,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .page-numbers.current {
+	color: #767676;
 	display: inline-block;
 }
 
@@ -1908,6 +1974,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 .prev.page-numbers,
 .next.page-numbers {
+	background-color: #ddd;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	display: inline-block;
@@ -1919,12 +1986,16 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 .prev.page-numbers,
 .next.page-numbers {
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
 .prev.page-numbers:focus,
 .prev.page-numbers:hover,
 .next.page-numbers:focus,
 .next.page-numbers:hover {
+	background-color: #767676;
+	color: #fff;
 }
 
 .prev.page-numbers {
@@ -1939,6 +2010,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 .entry-content blockquote.alignleft,
 .entry-content blockquote.alignright {
+	color: #666;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	width: 48%;
@@ -1970,6 +2042,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .blog .entry-meta a.post-edit-link,
 .archive .entry-meta a.post-edit-link,
 .search .entry-meta a.post-edit-link {
+	color: #222;
 	display: inline-block;
 	margin-left: 1em;
 	white-space: nowrap;
@@ -1981,6 +2054,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .taxonomy-description {
+	color: #666;
 	font-size: 13px;
 	font-size: 0.8125rem;
 }
@@ -2005,6 +2079,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .single-featured-image-header {
+	background-color: #fafafa;
 	border-bottom: 1px solid #eee;
 }
 
@@ -2021,6 +2096,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page-links .page-number {
+	color: #767676;
 	display: inline-block;
 	padding: 0.5em 1em;
 }
@@ -2030,6 +2106,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page-links a .page-number {
+	color: #222;
 }
 
 /* Entry footer */
@@ -2059,10 +2136,12 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .entry-footer .cat-links a,
 .entry-footer .tags-links a {
+	color: #333;
 }
 
 .entry-footer .cat-links .icon,
 .entry-footer .tags-links .icon {
+	color: #767676;
 	left: 0;
 	margin-right: 0.5em;
 	position: absolute;
@@ -2074,21 +2153,26 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .entry-footer .edit-link a.post-edit-link {
+	background-color: #222;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	color: #fff;
 	display: inline-block;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 800;
 	margin-top: 2em;
 	padding: 0.7em 2em;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
 	white-space: nowrap;
 }
 
 .entry-footer .edit-link a.post-edit-link:hover,
 .entry-footer .edit-link a.post-edit-link:focus {
+	background-color: #767676;
 }
 
 /* Post Formats */
@@ -2101,6 +2185,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .format-quote blockquote {
+	color: #333;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 300;
@@ -2133,6 +2218,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .nav-subtitle {
 	background: transparent;
+	color: #767676;
 	display: block;
 	font-size: 11px;
 	font-size: 0.6875rem;
@@ -2142,6 +2228,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .nav-title {
+	color: #333;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -2235,8 +2322,10 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .social-navigation a {
+	background-color: #767676;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
+	color: #fff;
 	display: inline-block;
 	height: 40px;
 	margin: 0 1em 0.5em 0;
@@ -2246,6 +2335,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .social-navigation a:hover,
 .social-navigation a:focus {
+	background-color: #333;
 }
 
 .social-navigation .icon {
@@ -2264,6 +2354,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .site-info a {
+	color: #666;
 }
 
 .site-info .sep {
@@ -2328,6 +2419,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .comment-metadata {
+	color: #767676;
 	font-size: 10px;
 	font-size: 0.625rem;
 	font-weight: 800;
@@ -2336,13 +2428,16 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .comment-metadata a {
+	color: #767676;
 }
 
 .comment-metadata a.comment-edit-link {
+	color: #222;
 	margin-left: 1em;
 }
 
 .comment-body {
+	color: #333;
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-bottom: 4em;
@@ -2354,6 +2449,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .comment-reply-link .icon {
+	color: #222;
 	left: -2em;
 	height: 1em;
 	position: absolute;
@@ -2374,6 +2470,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .no-comments,
 .comment-awaiting-moderation {
+	color: #767676;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-style: italic;
@@ -2400,6 +2497,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 h2.widget-title {
+	color: #222;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	font-weight: 800;
@@ -2494,6 +2592,7 @@ h2.widget-title {
 }
 
 .widget_rss .widget-title .rsswidget:first-child:hover {
+	background-color: transparent;
 }
 
 .widget_rss .widget-title .rsswidget:first-child img {
@@ -2518,6 +2617,7 @@ h2.widget-title {
 
 .widget_rss .rss-date,
 .widget_rss li cite {
+	color: #767676;
 	display: block;
 	font-size: 10px;
 	font-size: 0.625rem;
@@ -2606,6 +2706,8 @@ h2.widget-title {
 	margin: 4px 4px 0 0 !important;
 	padding: 4px 10px 5px !important;
 	position: relative;
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
 	width: auto;
 	word-wrap: break-word;
 	z-index: 0;
@@ -2617,7 +2719,7 @@ h2.widget-title {
 .widget.widget_tag_cloud a:focus,
 .wp_widget_tag_cloud a:hover,
 .wp_widget_tag_cloud a:focus {
-
+	border-color: #bbb;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	text-decoration: none;
@@ -2670,6 +2772,7 @@ object {
 
 .wp-caption,
 .gallery-caption {
+	color: #666;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	font-style: italic;
@@ -2705,56 +2808,81 @@ object {
 /* Playlist Color Overrides: Light */
 
 .site-content .wp-playlist-light {
+	border-color: #eee;
+	color: #222;
 }
 
 .site-content .wp-playlist-light .wp-playlist-current-item .wp-playlist-item-album {
+	color: #333;
 }
 
 .site-content .wp-playlist-light .wp-playlist-current-item .wp-playlist-item-artist {
+	color: #767676;
 }
 
 .site-content .wp-playlist-light .wp-playlist-item {
+	border-bottom: 1px dotted #eee;
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
 .site-content .wp-playlist-light .wp-playlist-item:hover,
 .site-content .wp-playlist-light .wp-playlist-item:focus {
+	border-bottom-color: rgba(0, 0, 0, 0);
+	background-color: #767676;
+	color: #fff;
 }
 
 .site-content .wp-playlist-light a.wp-playlist-caption:hover,
 .site-content .wp-playlist-light .wp-playlist-item:hover a,
 .site-content .wp-playlist-light .wp-playlist-item:focus a {
+	color: #fff;
 }
 
 /* Playlist Color Overrides: Dark */
 
 .site-content .wp-playlist-dark {
+	background: #222;
+	border-color: #333;
 }
 
 .site-content .wp-playlist-dark .mejs-container .mejs-controls {
+	background-color: #333;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-caption {
+	color: #fff;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-current-item .wp-playlist-item-album {
+	color: #eee;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-current-item .wp-playlist-item-artist {
+	color: #aaa;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-playing {
+	background-color: #333;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-item {
+	border-bottom: 1px dotted #555;
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-item:hover,
 .site-content .wp-playlist-dark .wp-playlist-item:focus {
+	border-bottom-color: rgba(0, 0, 0, 0);
+	background-color: #aaa;
+	color: #222;
 }
 
 .site-content .wp-playlist-dark a.wp-playlist-caption:hover,
 .site-content .wp-playlist-dark .wp-playlist-item:hover a,
 .site-content .wp-playlist-dark .wp-playlist-item:focus a {
+	color: #222;
 }
 
 /* Playlist Style Overrides */
@@ -2965,6 +3093,8 @@ object {
 /* Social Menu fallbacks */
 
 .no-svg .social-navigation a {
+	background: transparent;
+	color: #222;
 	height: auto;
 	width: auto;
 }
@@ -3359,13 +3489,13 @@ object {
 
 	.main-navigation ul li.menu-item-has-children:before,
 	.main-navigation ul li.page_item_has_children:before {
-
+		border-color: transparent transparent #bbb;
 		bottom: 0;
 	}
 
 	.main-navigation ul li.menu-item-has-children:after,
 	.main-navigation ul li.page_item_has_children:after {
-
+		border-color: transparent transparent #fff;
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -3380,13 +3510,18 @@ object {
 	}
 
 	.main-navigation li li {
+		-webkit-transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
 	}
 
 	.main-navigation li li:hover,
 	.main-navigation li li.focus {
+		background: #767676;
 	}
 
 	.main-navigation li li a {
+		-webkit-transition: color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;
 	}
 
 	.main-navigation li li.focus > a,
@@ -3398,7 +3533,7 @@ object {
 	.main-navigation li li.current-menu-item a:hover,
 	.main-navigation li li.current_page_item a:focus,
 	.main-navigation li li.current-menu-item a:focus {
-
+		color: #fff;
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -3464,12 +3599,12 @@ object {
 	}
 
 	.site-header .menu-scroll-down {
-
+		color: #fff;
 		top: 2em;
 	}
 
 	.site-header .navigation-top .menu-scroll-down {
-
+		color: #767676;
 		top: 0.7em;
 	}
 
@@ -4074,7 +4209,7 @@ object {
 	.twentyseventeen-front-page.has-header-video .site-title,
 	.twentyseventeen-front-page.has-header-image .site-title a,
 	.twentyseventeen-front-page.has-header-video .site-title a {
-
+		color: #222 !important; /* Make sure color schemes don't affect to print */
 	}
 
 	h2,
@@ -4085,7 +4220,7 @@ object {
 	.twentyseventeen-front-page.has-header-video .site-description,
 	.entry-meta,
 	.entry-meta a {
-
+		color: #777 !important; /* Make sure color schemes don't affect to print */
 	}
 
 	.entry-content blockquote.alignleft,
