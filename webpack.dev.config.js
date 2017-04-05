@@ -4,11 +4,21 @@ const path = require('path');
 
 module.exports = {
 
-  entry: './src/index.js',
+  entry: './src/index.jsx',
 
   output: {
     filename: 'listingslab-theme.js',
     path: path.resolve(__dirname, 'listingslab-theme/react')
+  },
+
+  module: {
+    loaders: [
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        loaders: ["babel-loader"],
+      }
+    ],
   },
 
   devServer: {
