@@ -1,0 +1,28 @@
+{
+  "name": "listingslab-theme",
+  "version": "5.9",
+  "description": "React Wordpress Theme with underlying Twentyseventeen fallback. Solving the universal JavaScript question one WordPress site at a time.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listingslab/listingslab-theme"
+  },
+  "author": "listingslab <listingslab@gmail.com>",
+  "contributors": [
+    {
+      "name": "Chris Dorward",
+      "email": "chris@listingslab.com",
+      "url": "http://listingslab.com/?s=wordpress"
+    }
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+  }
+}
