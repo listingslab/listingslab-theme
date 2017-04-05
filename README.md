@@ -1,8 +1,8 @@
 ![alt text](http://listingslab.com/wp-content/uploads/2017/03/cropped-android-chrome-384x384.png "Listingslab Beaker Logo")
 # Listingslab Theme
 
-Github: /wp-content/themes/listingslab-theme.
-React Wordpress Theme with underlying Twentyseventeen fallback. Solving the universal JavaScript question one WordPress site at a time.
+Github: https://github.com/listingslab/listingslab-theme
+Listingslab Theme is a React Wordpress Theme with underlying Twentyseventeen fallback. Solving the universal JavaScript question one WordPress site at a time.
 
 ## /src > /listingslab-theme/react
 

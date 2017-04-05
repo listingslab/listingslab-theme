@@ -1,6 +1,6 @@
 {
   "name": "listingslab-theme",
-  "version": "5.9",
+  "version": "5.9.0",
   "description": "React Wordpress Theme with underlying Twentyseventeen fallback. Solving the universal JavaScript question one WordPress site at a time.",
   "main": "index.js",
   "private": true,
@@ -19,7 +19,7 @@
       "url": "http://listingslab.com/?s=wordpress"
     }
   ],
-  "license": "UNLICENSED",
+  "license": "GPLv3",
   "dependencies": {
 
   },
