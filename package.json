@@ -1,36 +1,28 @@
 {
-  "name": "listingslab.com",
-  "version": "5.3.0",
-  "description": "Solving the universal JavaScript question one WordPress site at a time.",
+  "name": "listingslab-theme",
+  "version": "5.9",
+  "description": "React Wordpress Theme with underlying Twentyseventeen fallback. Solving the universal JavaScript question one WordPress site at a time.",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js --inline",
-    "start-dev": "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js",
-    "build": "NODE_ENV=production webpack --config webpack.prod.config.js"
+    "dev": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/listingslab/listingslab.com"
+    "url": "git+https://github.com/listingslab/listingslab-theme"
   },
   "author": "listingslab <listingslab@gmail.com>",
   "contributors": [
     {
       "name": "Chris Dorward",
       "email": "chris@listingslab.com",
-      "url": "http://listingslab.com/category/life/"
+      "url": "http://listingslab.com/?s=wordpress"
     }
   ],
   "license": "UNLICENSED",
-  "dependencies": {},
+  "dependencies": {
+
+  },
   "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.3.2",
-    "eslint": "^3.19.0",
-    "eslint-plugin-react": "^6.10.3",
-    "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2"
   }
 }
