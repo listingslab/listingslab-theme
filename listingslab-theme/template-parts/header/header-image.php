@@ -3,14 +3,18 @@
  * Displays header media
  *
  * @package WordPress
- * @subpackage listingslab-theme
- * @since 5.4
- * @version 5.4
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
  */
 
 ?>
-<div class="listingslab-featured-image">
+<div class="custom-header">
 
-<h1>Featured Image</h1>
+	<div class="custom-header-media">
+		<?php the_custom_header_markup(); ?>
+	</div>
 
-</div>
+	<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
+
+</div><!-- .custom-header -->
