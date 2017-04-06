@@ -1,6 +1,6 @@
 {
   "name": "listingslab-theme",
-  "version": "5.9.1",
+  "version": "5.9.2",
   "description": "React Wordpress Theme with underlying Twentyseventeen fallback. Solving the universal JavaScript question one WordPress site at a time.",
   "main": "index.js",
   "private": true,
@@ -16,15 +16,25 @@
     {
       "name": "Chris Dorward",
       "email": "chris@listingslab.com",
-      "url": "http://listingslab.com/?s=wordpress"
+      "url": "http://listingslab.com/home/wordpress"
     }
   ],
   "license": "GPLv3",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-eslint": "^7.2.1",
     "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-airbnb": "^2.2.3",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.22.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
