@@ -1,4 +1,5 @@
 <?php
+include 'listingslab/start.php';
 /**
  * The header for our theme
  *
@@ -11,7 +12,6 @@
  * @since 1.0
  * @version 1.0
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
@@ -23,6 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php include 'listingslab/app_switch.php'; ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
