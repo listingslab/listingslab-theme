@@ -1,5 +1,8 @@
 <?php
-include 'listingslab/start.php';
+
+// Listingslab cookie & react swith functionality
+// include 'listingslab/start.php';
+
 /**
  * The header for our theme
  *
@@ -23,7 +26,7 @@ include 'listingslab/start.php';
 </head>
 
 <body <?php body_class(); ?>>
-<?php include 'listingslab/app_switch.php'; ?>
+<?php // include 'listingslab/app_switch.php'; ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
